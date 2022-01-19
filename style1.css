@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+}
+
+body{
+    background-color: #180799;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg , green , #851313ad, #c7690e);
+    overflow: hidden;
+    z-index: 7;
+    border-radius: 9px;
+    box-shadow: inset 8px 9px 209px #180799;
+}
+
+.content{
+    position: absolute;
+    color: white;
+    top: 30px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.content h1{
+    background: linear-gradient(to right , #00800026 , #85131326, #c7690e5c);
+    box-shadow: inset 0px 0px 42px #9f1a9836;
+    padding: 2px 11px;
+    border-radius: 9px;
+    font-size: 3rem;
+}
+
+.box {
+    
+    margin: 3px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.box1 {
+    width: 150px;
+    height: 150px;
+    animation-name: box1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    background-color: green;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.box2 {
+    width: 175px;
+    height: 175px;
+    overflow: hidden;
+    animation-name: box2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* box-shadow: inset 12px 0px 98px #fff; */
+    background-color: #fff;
+    z-index: 4;
+}
+.box3 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    animation-name: box3;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    background-color: #c7690e;
+    z-index: 3;
+}
+
+.box4 {
+    width: 110px;
+    height: 110px;
+    animation-name: box4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    z-index: 7;
+    border-radius: 50%;
+}
+
+.box4 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+@keyframes box1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes box2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes box3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes box4 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
